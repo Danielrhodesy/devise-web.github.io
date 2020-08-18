@@ -1,8 +1,12 @@
 import React from 'react'
+import Main from './Main'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <>
+    <h1>Its working dude</h1>
+    <Main/>
+    </>
   )
 }
 
