@@ -1,4 +1,167 @@
 body {
-  background-color: blue;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.se {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bl {
+  border: 1px solid black;
+}
+
+.nav-container {
+  height: 4.5em;
+  width: 100%;
+  background-color: #FBE3DC;
+}
+
+.container {
+  height: 100%;
+  width: 90%;
+}
+
+.logo {
+  height: 100%;
+  width: 10em;
+  background-color: #F3A994;
+}
+
+nav {
+  height: 100%;
+  width: 55%;
+}
+
+.nav-item {
+  height: 1em;
+  width: 3em;
+  font-size: 25px;
+  color: #7E726F;
+}
+
+.profile {
+  height: 2em;
+  width: 2em;
+  border-radius: 5em;
+  background-color: grey;
+  color: white;
+}
+
+.post-proj {
+  height: 2em;
+  width: 7em;
+  border-radius: 25px;
+  background-color: #F3A994;
+  color: white;
+}
+
+.fp-container {
+  height: 43.4rem;
+  background-color: darkgray;
+}
+
+.fp-container article {
+  height: 15rem;
+  width: 30rem;
+  background-color: #C9B6B0;
+}
+
+.sl-container {
+  height: 20rem;
+  width: 100%;
+  background-color: #C9B6B0;
+}
+
+.sl-bio {
+  height: 100%;
+  width: 50%;
+}
+
+.sl-gallery {
+  height: 100%;
+  width: 50%;
+}
+
+.os-container {
+  height: 50rem;
+  width: 100%;
+  background-color: white;
+}
+
+.os-title-container {
+  height: 20%;
+  width: 100%;
+}
+
+.sp-container {
+  height: 40rem;
+  background-color: grey;
+  width: 100%;
+}
+
+.pf-container {
+  height: 50rem;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.ct-container {
+  height: 50rem;
+  width: 100%;
+  background-color: aliceblue;
 }
 /*# sourceMappingURL=index.css.map */
