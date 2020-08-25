@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-// import { register } from '../actions';
+import { register } from '../actions';
 
 class Register extends React.Component {
     constructor(props) {
@@ -43,9 +43,10 @@ class Register extends React.Component {
       )
     }
   }
-  // function mapReduxStateToProps(reduxState) {
-  //   return {
-  //   }
-  // }
-  export default (Register)
-  // connect(mapReduxStateToProps) This goes in here^
+  
+  function mapReduxStateToProps(reduxState) {
+    return {
+    }
+  }
+
+  export default connect(mapReduxStateToProps)(Register)
