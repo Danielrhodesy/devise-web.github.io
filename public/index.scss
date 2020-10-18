@@ -49,6 +49,13 @@ $color-spotlight: #C9B6B0;
     align-items: center;
 }
 
+//Flex Direction
+
+.fdv {
+    display: flex;
+    flex-direction: column;
+}
+
 //Border Classes
 
 .bl {
@@ -115,13 +122,14 @@ nav {
 
 .fp-container {
     height: 43.4rem;
-    background-color: darkgray;
+    background-color: grey;
 }
 
 .fp-container article {
     height: 15rem;
     width: 30rem;
-    background-color: $color-spotlight;
+    background-color: white;
+    opacity: 0.5;
 }
 
 
