@@ -10,6 +10,10 @@ h1 {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +100,10 @@ nav {
   width: 55%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-item {
   height: 1em;
   width: 3em;
@@ -121,7 +129,11 @@ nav {
 
 .fp-container {
   height: 43.4rem;
-  background-color: grey;
+}
+
+.background-gif {
+  position: fixed;
+  z-index: -1;
 }
 
 .fp-container article {

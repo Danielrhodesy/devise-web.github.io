@@ -10,6 +10,10 @@ h1 {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 //Colour Variables
 
 $color-main-nav: #FBE3DC;
@@ -62,6 +66,9 @@ $color-spotlight: #C9B6B0;
     border: 1px solid black;
 }
 
+
+
+
 //Nav Classes
 
 //Logo Container
@@ -91,6 +98,10 @@ nav {
     width: 55%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav-item {
     height: 1em;
     width: 3em;
@@ -116,13 +127,28 @@ nav {
 
 
 
+
+
+
 // ******* Find a Project ******* //
 
 
 
 .fp-container {
     height: 43.4rem;
-    background-color: grey;
+    // background-color: grey;
+}
+
+.fp-container img{
+    // height: 43.4rem;
+    // width:100%;
+    // position: absolute;
+    // z-index: -1;
+}
+
+.background-gif {
+    position: fixed;
+    z-index: -1;
 }
 
 .fp-container article {
@@ -131,6 +157,11 @@ nav {
     background-color: white;
     opacity: 0.5;
 }
+
+
+
+
+
 
 
 

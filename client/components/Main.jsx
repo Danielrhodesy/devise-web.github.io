@@ -13,6 +13,8 @@ import Register from "./Register"
 import Profile from "./Profile"
 import Settings from "./Settings"
 import PostProj from "./PostProj"
+import mainImage from "../../public/dude.png"
+
 
 class Main extends Component {
   render() {
@@ -22,6 +24,9 @@ class Main extends Component {
         <AuthProvider>
             <Router>
             <Nav/>
+            <div className="background-gif">
+              <img src={mainImage} alt="Main Image" />
+            </div>
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/About" component={About} />

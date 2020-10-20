@@ -1,5 +1,5 @@
 
-  
+
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -16,10 +16,12 @@ import Support from "./Support"
 import Contact from "./Contact"
 
 
+
 class HomePage extends Component {
   render() {
     return (
       <>
+        
         <Findproject/>
         <Spotlight/>
         <Ourstory/>
