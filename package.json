@@ -29,7 +29,10 @@
     ]
   },
   "dependencies": {
+    "@popperjs/core": "^2.5.3",
+    "bootstrap": "^4.5.3",
     "express": "^4.16.4",
+    "react-bootstrap": "^1.4.0",
     "superagent": "^5.0.2"
   },
   "devDependencies": {
