@@ -83,6 +83,11 @@ a {
   z-index: -1;
 }
 
+.leaflet-container {
+  height: 100vh;
+  width: 80%;
+}
+
 .nav-container {
   height: 4.5em;
   width: 100%;
@@ -141,6 +146,7 @@ a {
   width: 35rem;
   background-color: white;
   opacity: 0.5;
+  font-family: rosellinda_alyamore, serif;
 }
 
 .search-container {
