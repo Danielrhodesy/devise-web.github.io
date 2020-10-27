@@ -26,11 +26,17 @@ class Portfolio extends Component {
               <img src={port4} alt=""/>
               <img src={port5} alt=""/>
               <img src={port6} alt=""/>
-              <img src={port7} alt=""/>
               <img src={port8} alt=""/>
               <img src={port9} alt=""/>
               <img src={port10} alt=""/>
               <img src={port11} alt=""/>
+              <img src={port4} alt=""/>
+              <img src={port3} alt=""/>
+              <img src={port9} alt=""/>
+              <img src={port5} alt=""/>
+
+
+
 
             </article>
         </section>
