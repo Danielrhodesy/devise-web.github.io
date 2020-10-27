@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: 'Tommy-thin';
 }
 
 p {
@@ -10,10 +11,43 @@ h1 {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Rosellinda';
+  src: local("Rosellinda"), url(../public/fonts/Rosellinda.woff) format("truetype");
+}
+
+@font-face {
+  font-family: 'Tommy-reg';
+  src: local("Tommy-reg"), url(./fonts/made_tommy_regular.woff) format("truetype");
+}
+
+@font-face {
+  font-family: 'Tommy-thin';
+  src: local("Tommy-thin"), url(./fonts/made_tommy_thin.woff) format("truetype");
+}
+
+.title-font {
+  font-family: "Rosellinda";
+  font-size: 100px;
+  color: #848063;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .fe {
@@ -60,14 +94,43 @@ h1 {
           align-items: center;
 }
 
+.fdv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .bl {
   border: 1px solid black;
+}
+
+.background-gif {
+  position: fixed;
+  z-index: -1;
+  height: 45rem;
+  width: 100%;
+}
+
+.background-gif img {
+  height: 45rem;
+  width: 100%;
+}
+
+.leaflet-container {
+  height: 100vh;
+  width: 80%;
+  z-index: 0;
 }
 
 .nav-container {
   height: 4.5em;
   width: 100%;
   background-color: #FBE3DC;
+  position: fixed;
 }
 
 .container {
@@ -86,11 +149,24 @@ nav {
   width: 55%;
 }
 
+.nav-container {
+  z-index: 1;
+}
+
+.nav-right {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
 .nav-item {
   height: 1em;
   width: 3em;
-  font-size: 25px;
+  font-size: 18px;
   color: #7E726F;
+  font-family: "Tommy-thin";
 }
 
 .profile {
@@ -111,17 +187,52 @@ nav {
 
 .fp-container {
   height: 43.4rem;
-  background-color: darkgray;
 }
 
 .fp-container article {
-  height: 15rem;
-  width: 30rem;
-  background-color: #C9B6B0;
+  height: 14rem;
+  width: 35rem;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.search-container {
+  width: 70%;
+  height: 3rem;
+}
+
+.search {
+  padding: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.search-drop {
+  height: 100%;
+  width: 160%;
+  border: 0px;
+  background-color: #FBE3DC;
+}
+
+.searrch-drop:hover {
+  background-color: #ebd7d1;
+}
+
+.search-drop:focus {
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+.dropdown-item {
+  height: 3rem;
+  width: 11.5rem;
+  border: 0px;
+  background-color: #FBE3DC;
 }
 
 .sl-container {
-  height: 20rem;
+  height: 25rem;
   width: 100%;
   background-color: #C9B6B0;
 }
@@ -129,6 +240,26 @@ nav {
 .sl-bio {
   height: 100%;
   width: 50%;
+  color: white;
+}
+
+.bio-title {
+  height: 5rem;
+  width: 40%;
+  color: white;
+  padding: 1rem;
+}
+
+.bio-text {
+  width: 80%;
+}
+
+.sl-bio h3 {
+  padding: 1rem;
+}
+
+.sl-bio p {
+  padding: 1rem;
 }
 
 .sl-gallery {
@@ -136,14 +267,97 @@ nav {
   width: 50%;
 }
 
+.img-container-left {
+  height: 100%;
+  width: 20%;
+}
+
+.img-cont {
+  height: 33.3%;
+  width: 100%;
+}
+
+.img-cont img {
+  height: 100%;
+  width: 100%;
+}
+
+.img-container-right {
+  height: 100%;
+  width: 80%;
+}
+
+.img-container-right img {
+  height: 100%;
+  width: 100%;
+}
+
 .os-container {
-  height: 50rem;
+  height: 52rem;
   width: 100%;
   background-color: white;
 }
 
 .os-title-container {
   height: 20%;
+  width: 40%;
+}
+
+.os-title-container h3 {
+  margin: 0;
+  margin-top: 0.3rem;
+  color: #F3A994;
+}
+
+.os-title {
+  height: 70%;
+  width: 60%;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.story-content {
+  width: 65rem;
+  height: 60%;
+}
+
+.story-top {
+  height: 50%;
+  width: 95%;
+}
+
+.top-text {
+  width: 45%;
+  padding: 0 1.5rem 1.5rem 0;
+}
+
+.top-img {
+  width: 45%;
+  background-color: grey;
+}
+
+.top-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.story-bot {
+  height: 50%;
+  width: 95%;
+}
+
+.bot-text {
+  padding: 1.5rem 0 0 1.5rem;
+  width: 45%;
+}
+
+.bot-img {
+  width: 45%;
+  background-color: grey;
+}
+
+.bot-img img {
+  height: 100%;
   width: 100%;
 }
 
@@ -154,14 +368,152 @@ nav {
 }
 
 .pf-container {
-  height: 50rem;
+  height: 48.35rem;
   width: 100%;
   background-color: antiquewhite;
 }
 
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #photos {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  #photos {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  #photos {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+.pf-gallery img {
+  height: auto;
+}
+
+.ct-title {
+  height: 5rem;
+  width: 22rem;
+  font-family: "Tommy-reg";
+  font-size: 5rem;
+  color: #848063;
+}
+
 .ct-container {
-  height: 50rem;
+  height: 100rem;
   width: 100%;
-  background-color: aliceblue;
+  background-color: white;
+}
+
+.map-cont {
+  height: 27rem;
+  width: 65rem;
+}
+
+.ct-text {
+  height: 40rem;
+  width: 65rem;
+  color: #7E716E;
+}
+
+.ct-left-box {
+  height: 40rem;
+  width: 50%;
+}
+
+.ct-inq {
+  height: 10rem;
+  width: 30rem;
+}
+
+.ct-inq h1 {
+  margin: 1rem 0 1rem;
+}
+
+.ct-form {
+  height: 30rem;
+  width: 30rem;
+}
+
+.ct-form p {
+  margin: 1rem 0 1rem 0;
+}
+
+.form-input {
+  background-color: #F7F7F7;
+  color: #7E716E;
+  height: 2rem;
+  width: 99%;
+}
+
+.form-button-wrapper {
+  margin-top: 1.5rem;
+}
+
+.form-button {
+  color: white;
+  background-color: #7E716E;
+  height: 3rem;
+  width: 10rem;
+}
+
+.input-f {
+  border: 0px;
+}
+
+.ct-right-box {
+  height: 40rem;
+  width: 50%;
+  padding-left: 7%;
+}
+
+.ct-off {
+  height: 40rem;
+  width: 30rem;
+  position: right;
+}
+
+.ct-off h1 {
+  margin: 1rem 0 1rem;
+}
+
+.ct-emp {
+  height: 50rem;
+  width: 30rem;
+}
+
+.ct-emp h1 {
+  margin: 1rem 0 1rem;
 }
 /*# sourceMappingURL=index.css.map */

@@ -13,6 +13,8 @@ const store = createStore(reducers, composeEnhancers(
   applyMiddleware(thunk)
 ));
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Provider store={store}>

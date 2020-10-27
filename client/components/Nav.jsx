@@ -17,7 +17,7 @@ class Nav extends Component {
                 <div class="logo">
                 </div>
               </Link>
-            <nav class="sb ct">
+            <nav class="nav-right sb ct">
               <Link to="/About">
                   <div class="nav-item se ct">  
                   <p>About</p>

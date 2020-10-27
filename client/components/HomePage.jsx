@@ -1,5 +1,5 @@
 
-  
+
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -12,19 +12,21 @@ import Findproject from "./Findproject"
 import Spotlight from "./Spotlight"
 import Ourstory from "./Ourstory"
 import Portfolio from "./Portfolio"
-import Support from "./Support"
+// import Support from "./Support"
 import Contact from "./Contact"
+
 
 
 class HomePage extends Component {
   render() {
     return (
       <>
+        
         <Findproject/>
         <Spotlight/>
         <Ourstory/>
         <Portfolio/>
-        <Support/>
+        {/* <Support/> */}
         <Contact/>
       </>
     );
