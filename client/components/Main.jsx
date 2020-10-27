@@ -13,7 +13,7 @@ import Register from "./Register"
 import Profile from "./Profile"
 import Settings from "./Settings"
 import PostProj from "./PostProj"
-import mainImage from "../../public/dude.png"
+import mainImage from "../../public/gifmain.gif"
 
 
 class Main extends Component {

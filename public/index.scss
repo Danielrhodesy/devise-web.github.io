@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: 'Tommy-reg';
 }
 
 p {
@@ -13,6 +14,7 @@ h1 {
 a {
     text-decoration: none;
 }
+
 
 //Colour Variables
 
@@ -32,10 +34,25 @@ $color-spotlight: #C9B6B0;
 //     src: local('Rosellinda'), url(../public/fonts/Rosellinda.otf) format('truetype');
 //   }
 
+@font-face {
+    font-family: 'Tommy-reg';
+    src: local('Tommy-reg'), url(./fonts/made_tommy_regular.woff) format('truetype');
+  }
+
+@font-face {
+font-family: 'Tommy-thin';
+src: local('Tommy-thin'), url(./fonts/made_tommy_thin.woff) format('truetype');
+}
+
+
 //Flex Classes
 
 .flex {
     display: flex;
+}
+
+.flex-1{
+    flex: 1;
 }
 
 .fe {
@@ -83,6 +100,13 @@ $color-spotlight: #C9B6B0;
 .background-gif {
     position: fixed;
     z-index: -1;
+    height: 30rem;
+    width: 100%;
+}
+
+.background-gif img {
+    height: 30rem;
+    width: 100%;
 }
 
 //Map Styling
@@ -90,6 +114,8 @@ $color-spotlight: #C9B6B0;
 .leaflet-container {
     height: 100vh;
     width: 80%;
+    z-index: 0;
+
 }
 
 
@@ -102,6 +128,7 @@ $color-spotlight: #C9B6B0;
     height: 4.5em;
     width: 100%;
     background-color: $color-main-nav;
+    position: fixed;
     
 }
 
@@ -123,6 +150,15 @@ nav {
     width: 55%;
 }
 
+.nav-container {
+    z-index: 1;
+
+}
+
+.nav-right {
+    width: 50%;
+}
+
 a {
     text-decoration: none;
 }
@@ -130,8 +166,9 @@ a {
 .nav-item {
     height: 1em;
     width: 3em;
-    font-size: 25px;
+    font-size: 18px;
     color: #7E726F;
+    font-family: ;
 }
 
 .profile {
@@ -169,8 +206,7 @@ a {
     height: 14rem;
     width: 35rem;
     background-color: white;
-    opacity: 0.5;
-    font-family: rosellinda_alyamore, serif;
+    opacity: 0.8;
 }
 
 .search-container {
@@ -219,6 +255,7 @@ a {
     height: 25rem;
     width: 100%;
     background-color: $color-spotlight;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .sl-bio {
@@ -277,6 +314,7 @@ a {
     height: 52rem;
     width: 100%;
     background-color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .os-title-container {
@@ -297,7 +335,7 @@ a {
 }
 
 .story-content {
-    width: 70%;
+    width: 65rem;
     height: 60%;
 }
 
@@ -359,12 +397,93 @@ a {
 
 
 
-.ct-container {
-    height: 50rem;
-    width: 100%;
-    background-color: aliceblue;
+// ******* Contact ******* //
+
+.ct-title {
+    height: 5rem;
+    width: 22rem;
 }
 
-// body {
-//     background-color: blue;
-// }
+.ct-container {
+    height: 100rem;
+    width: 100%;
+    background-color: white;
+}
+
+.map-cont {
+    height: 27rem;
+    width: 65rem;
+}
+
+.ct-text{
+    height: 40rem;
+    width: 65rem;
+    color: #7E716E;
+}
+
+.ct-left-box {
+    height: 40rem;
+    width: 50%;
+}
+
+.ct-inq {
+    height: 10rem;
+    width: 30rem;
+}
+
+.ct-inq h1 {
+    margin: 1rem 0 1rem;
+}
+
+.ct-form {
+    height: 30rem;
+    width: 30rem;
+}
+
+.ct-form p {
+    margin: 1rem 0 1rem 0;
+}
+
+.form-input {
+    background-color: #F7F7F7;
+    color: #7E716E;
+    height: 2rem;
+    width: 99%;
+}
+
+.form-button-wrapper {
+ margin-top: 1.5rem;   
+}
+
+.form-button {
+    color: white;
+    background-color: #7E716E;
+    height: 3rem;
+    width: 10rem;
+}
+
+
+.ct-right-box {
+    height: 40rem;
+    width: 50%;
+    padding-left: 7%;
+}
+
+.ct-off {
+    height: 40rem;
+    width: 30rem;
+    position: right;
+}
+
+.ct-off h1{
+    margin: 1rem 0 1rem;
+}
+
+.ct-emp {
+    height: 50rem;
+    width: 30rem;
+}
+
+.ct-emp h1 {
+    margin: 1rem 0 1rem;
+}

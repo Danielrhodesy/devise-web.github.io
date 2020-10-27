@@ -22,6 +22,15 @@ module.exports = {
         test: /\.(png|gif)$/,
         use: ['file-loader']
       },
+      {
+        test: /\.woff$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 50000,
+          },
+        },
+      },
     ]
   },
   resolve: {
