@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: 'Tommy-reg';
+    font-family: 'Tommy-thin';
 }
 
 p {
@@ -24,15 +24,11 @@ $color-spotlight: #C9B6B0;
 
 //Fonts
 
-// @font-face {
-//     font-family: 'rosellinda_alyamore';
-//     src: local('rosellinda_alyamore'), url(../public/fonts/rosellinda_alyamore.otf) format('truetype');
-// }
 
-// @font-face {
-//     font-family: 'Rosellinda';
-//     src: local('Rosellinda'), url(../public/fonts/Rosellinda.otf) format('truetype');
-//   }
+@font-face {
+    font-family: 'Rosellinda';
+    src: local('Rosellinda'), url(../public/fonts/Rosellinda.woff) format('truetype');
+  }
 
 @font-face {
     font-family: 'Tommy-reg';
@@ -43,6 +39,16 @@ $color-spotlight: #C9B6B0;
 font-family: 'Tommy-thin';
 src: local('Tommy-thin'), url(./fonts/made_tommy_thin.woff) format('truetype');
 }
+
+
+.title-font {
+    font-family: "Rosellinda";
+    font-size: 100px;
+    color: #848063;
+    letter-spacing: 0.2rem;
+    font-weight:500;
+}
+
 
 
 //Flex Classes
@@ -100,12 +106,12 @@ src: local('Tommy-thin'), url(./fonts/made_tommy_thin.woff) format('truetype');
 .background-gif {
     position: fixed;
     z-index: -1;
-    height: 30rem;
+    height: 45rem;
     width: 100%;
 }
 
 .background-gif img {
-    height: 30rem;
+    height: 45rem;
     width: 100%;
 }
 
@@ -168,7 +174,7 @@ a {
     width: 3em;
     font-size: 18px;
     color: #7E726F;
-    font-family: ;
+    font-family: "Tommy-thin";
 }
 
 .profile {
@@ -255,7 +261,6 @@ a {
     height: 25rem;
     width: 100%;
     background-color: $color-spotlight;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .sl-bio {
@@ -267,7 +272,7 @@ a {
 .bio-title {
     height: 5rem;
     width: 40%;
-    background-color: grey;
+    color: white;
     padding: 1rem;
 }
 
@@ -300,9 +305,19 @@ a {
     width: 100%;
 }
 
+.img-cont img{
+    height: 100%;
+    width: 100%;
+}
+
 .img-container-right {
     height: 100%;
     width: 80%;
+}
+
+.img-container-right img {
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -314,7 +329,6 @@ a {
     height: 52rem;
     width: 100%;
     background-color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .os-title-container {
@@ -331,7 +345,8 @@ a {
 .os-title {
     height: 70%;
     width: 60%;
-    background-color: grey;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
 }
 
 .story-content {
@@ -354,6 +369,11 @@ a {
     background-color: grey;
 }
 
+.top-img img {
+    height: 100%;
+    width: 100%;
+}
+
 .story-bot {
     height: 50%;
     width: 95%;
@@ -369,6 +389,10 @@ a {
     background-color: grey;
 }
 
+.bot-img img {
+    height: 100%;
+    width: 100%;
+}
 
 // ******* Our Story ******* //
 
@@ -402,6 +426,10 @@ a {
 .ct-title {
     height: 5rem;
     width: 22rem;
+    font-family: "Tommy-reg";
+    font-size: 5rem;
+    color: #848063;
+
 }
 
 .ct-container {
@@ -462,6 +490,9 @@ a {
     width: 10rem;
 }
 
+.input-f {
+    border: 0px;
+}
 
 .ct-right-box {
     height: 40rem;

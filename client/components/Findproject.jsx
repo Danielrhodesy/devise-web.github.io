@@ -9,7 +9,7 @@ class Findproject extends Component {
       <>
        
         <section className="fp-container sa  ct">
-            <article className="bl ct fdv sa">
+            <article className=" ct fdv sa">
                 <h1>Find a Project</h1>
                 <div className="search-container sa">
                   <div className="search">I am a ..</div>

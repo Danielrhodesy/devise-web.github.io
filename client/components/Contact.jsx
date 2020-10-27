@@ -7,7 +7,7 @@ class Contact extends Component {
     return (
       <>
         <section className="ct-container sa ct fdv">
-            <article className="ct-title  sa fdv bl">
+            <article className="ct-title sa fdv">
               <h1>Contact</h1>
             </article>
             <Map center={[-41.291585, 174.775499]} zoom="16" className="map-cont">
@@ -29,22 +29,22 @@ class Contact extends Component {
                   <form className="ct-form fdv">
                     <label>
                       <p>Enter your Name</p>
-                      <input type="text" name="name" value="Name" className="form-input"/>
+                      <input type="text" name="name" value="Name" className="form-input input-f"/>
                     </label>
                     <label>
                       <p>Enter your Email</p>
-                      <input type="text" name="name" value="Email" className="form-input"/>
+                      <input type="text" name="name" value="Email" className="form-input input-f"/>
                     </label>
                     <label>
                       <p>Enter your Subject</p>
-                      <input type="text" name="name" value="Subject" className="form-input"/>
+                      <input type="text" name="name" value="Subject" className="form-input input-f"/>
                     </label>
                     <label>
                       <p>Enter your Message</p>
-                      <input type="text_box" name="name" value="Message" className="form-input" />
+                      <input type="text_box" name="name" value="Message" className="form-input input-f" />
                     </label> 
                     <div className="form-button-wrapper sa">
-                      <input type="submit" value="Submit" className="form-button sa ct" />
+                      <input type="submit" value="Submit" className="form-button input-f sa ct" />
                     </div>                    
                   </form>
                 </div>
