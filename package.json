@@ -56,7 +56,7 @@
     "jsonwebtoken": "^8.5.1",
     "jwt-auth-react": "^4.1.2",
     "jwt-decode": "^2.2.0",
-    "knex": "^0.21.5",
+    "knex": "^2.4.0",
     "libsodium-wrappers": "^0.7.8",
     "mssql": "^6.2.1",
     "mysql": "^2.18.1",
